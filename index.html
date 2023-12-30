@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>确认进入该页面吗？</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-
-  <body>
-    <div class="confirm">
-      <div class="confirm-content">
-        <div class="confirm-title">确认进入该页面吗？</div>
-        <div class="confirm-btn">
-          <button id="no">取消</button>
-          <button id="yes">确认</button>
-        </div>
-      </div>
-    </div>
-    <video
-      class="video"
-      style="display: none"
-      src="./assets/petal_20230801_233451.mp4"
-      disablePictureInPicture
-      webkit-playsinline="true"
-      x5-playsinline="true"
-    ></video>
-    <script src="./main.js">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神，启动！</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="icon" rel="shortcut icon" href="https://ys.mihoyo.com/main/favicon.ico">
+    <script>
+        function redirectToAnotherPage() {
+            window.location.href = './buzz.html';
+        }
     </script>
-  </body>
+</head>
+<body>
+    <div id="genshin" onanimationend="redirectToAnotherPage()"></div>
+</body>
 </html>
