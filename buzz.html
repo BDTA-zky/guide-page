@@ -14,14 +14,17 @@
 	 type="text/css" id="photoShowStyles_pointerNone">*:before,*:after{pointer-events:none !important}
 ul {
     display: flex;
+    flex-wrap: wrap; /* 允许项目换行 */
     list-style-type: none;
     padding: 0;
     justify-content: space-around; /* 让链接项水平对齐 */
+    align-items: center; /* 在垂直方向上居中对齐项目 */
 }
 
 li {
     padding: 10px; /* 设置内边距 */
     border-left: 1px solid #ccc; /* 添加竖直分隔线 */
+    margin-bottom: 10px; /* 设置项目间的下边距 */
 }
 
 a {
